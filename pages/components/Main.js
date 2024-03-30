@@ -9,10 +9,10 @@ const Main = () => {
     <div className={`container bg-${theme === 'light'? 'light': 'dark'} txt-${theme === 'light'? 'light': 'dark'}`} 
       id='themed-page'
     >
-      <p id='themed-text-container'>lorem ipsum dolor iterit n stuff</p>
+      <p id='themed-text-container' className={`txt-${theme === 'light'? 'light': 'dark'}`}>lorem ipsum dolor iterit n stuff</p>
       <button 
-        className={`btn btn-${theme === 'light'? 'light': 'dark'}`} 
-        id='themed-button'
+        className={`btn btn-${theme === 'light'? 'light': 'dark'} txt-${theme === 'light'? 'light': 'dark'}`} 
+        id='global-theme-toggler'
         onClick={toggleTheme}
       >
         Themed Button
