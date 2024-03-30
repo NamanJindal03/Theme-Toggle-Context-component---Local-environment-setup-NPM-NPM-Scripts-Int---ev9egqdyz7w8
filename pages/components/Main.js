@@ -6,10 +6,10 @@ import { ThemeContext } from './ThemeProvider';
 const Main = () => {
   const {theme, toggleTheme} = useContext(ThemeContext);
   return (
-    <div className={`container bg-${theme === 'light'? 'light': 'dark'} txt-${theme === 'light'? 'light': 'dark'}`} 
+    <div className={`container bg-${theme === 'light'? 'light': 'dark'}`} 
       id='themed-page'
     >
-      <p id='themed-text-container' className={`txt-${theme === 'light'? 'light': 'dark'}`}>lorem ipsum dolor iterit n stuff</p>
+      <p id='themed-text-container' className={`txt-${theme}`}>lorem ipsum dolor iterit n stuff</p>
       <button 
         className={`btn btn-${theme === 'light'? 'light': 'dark'} txt-${theme === 'light'? 'light': 'dark'}`} 
         id='global-theme-toggler'
